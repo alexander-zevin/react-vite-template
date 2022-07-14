@@ -50,6 +50,12 @@
             ],
             "@__tests__": [
                 "./src/__tests__"
+            ],
+            "@styles/*": [
+                "./src/styles/*"
+            ],
+            "@styles": [
+                "./src/styles"
             ]
         }
     },
