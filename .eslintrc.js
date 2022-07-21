@@ -25,7 +25,13 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss'],
   rules: {
     'max-len': ['error', { code: 140 }],
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        jsxSingleQuote: true,
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/jsx-no-bind': 'off',
@@ -36,5 +42,6 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    // quotes: ['error', 'single'],
   },
 };

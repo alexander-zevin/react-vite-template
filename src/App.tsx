@@ -1,6 +1,6 @@
 const App = () => (
   <main>
-    <h1 className="m-5 text-3xl font-bold underline">Hello world!</h1>
+    <h1 className='font-bold underline lg:text-3xl'>Hello world!</h1>
   </main>
 );
 

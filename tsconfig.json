@@ -42,15 +42,6 @@
             "@typings": [
                 "./src/typings"
             ],
-            "@tests": [
-                "./src/tests"
-            ],
-            "@__tests__/*": [
-                "./src/__tests__/*"
-            ],
-            "@__tests__": [
-                "./src/__tests__"
-            ],
             "@styles/*": [
                 "./src/styles/*"
             ],
