@@ -9,3 +9,4 @@ vite.config.ts
 jest.config.js
 postcss.config.js
 tailwind.config.js
+cypress.config.ts

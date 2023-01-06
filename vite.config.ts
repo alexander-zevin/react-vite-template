@@ -1,16 +1,20 @@
+/// <reference types="vitest" />
+import * as path from "path";
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { ViteAliases } from 'vite-aliases';
 import checker from 'vite-plugin-checker';
 
 export default defineConfig({
+  resolve:{
+    alias:{
+      '@' : path.resolve(__dirname, './src'),
+      '@components' : path.resolve(__dirname, './src/components'),
+      '@typings' : path.resolve(__dirname, './src/typings'),
+      '@styles' : path.resolve(__dirname, './src/styles'),
+    },
+  },
   plugins: [
     react(),
-    ViteAliases({
-      useConfig: true,
-      useTypescript: true,
-      useIndexes: true,
-    }) as any,
     checker({
       typescript: true,
       eslint: {
@@ -18,4 +22,8 @@ export default defineConfig({
       },
     }),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  }
 });

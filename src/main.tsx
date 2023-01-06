@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { ErrorHandling } from '@components';
-import App from './App';
+import App from '@/App';
 
 import '@styles/index.css';
 

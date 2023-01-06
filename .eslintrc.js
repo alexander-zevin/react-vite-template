@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    "cypress/globals": true
   },
   extends: [
     'airbnb',
@@ -12,6 +13,7 @@ module.exports = {
     'plugin:react/recommended',
     'prettier',
     'plugin:tailwindcss/recommended',
+    "plugin:cypress/recommended"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,7 +24,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss', "cypress"],
   rules: {
     'max-len': ['error', { code: 140 }],
     'prettier/prettier': [
@@ -32,6 +34,7 @@ module.exports = {
         jsxSingleQuote: true,
       },
     ],
+    "import/extensions": ["error", "never"],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/jsx-no-bind': 'off',

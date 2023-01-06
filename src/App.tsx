@@ -1,7 +1,11 @@
-const App = () => (
-  <main>
-    <h1 className='font-bold underline lg:text-3xl'>Hello world!</h1>
-  </main>
-);
+import { Counter } from '@components';
+
+function App() {
+  return (
+    <main>
+      <Counter />
+    </main>
+  );
+}
 
 export default App;
